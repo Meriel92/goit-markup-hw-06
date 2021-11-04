@@ -273,6 +273,7 @@ body {
   text-align: center;
   letter-spacing: 0.06em;
   border-radius: 4px;
+  border: 1px solid transparent;
 
   background-color: var(--accent-color);
   color: var(--white);
@@ -644,6 +645,7 @@ body {
   padding-bottom: 10px;
   padding-right: 28px;
   padding-left: 29px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-form-icon {
@@ -668,7 +670,8 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: opasity 250ms ease-in-out visibility 250ms ease-in-out;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .backdrop.is-hidden {
@@ -679,6 +682,15 @@ body {
 
 .backdrop.is-hidden .modal {
   transform: scale(2);
+}
+
+.close-btn .backdrop-icon {
+  fill: #000000;
+}
+
+.backdrop-icon:hover,
+.backdrop-icon:focus {
+  fill: var(--accent-color);
 }
 
 /* ---------------------Modal----------------------- */
@@ -733,8 +745,6 @@ body {
   margin-right: 40px;
   margin-left: 40px;
   margin-bottom: 10px;
-  /* display: flex;
-  flex-direction: column; */
 }
 
 .form-text-input {
@@ -800,7 +810,7 @@ body {
   display: block;
   margin: 0 auto;
   letter-spacing: 0.06em;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  /* box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15); */
 }
 
 .form-btn:hover,
@@ -830,7 +840,7 @@ body {
   width: 30px;
   height: 30px;
   border-radius: 50%;
-  border: 1px solid #999999;
+  border: 1px solid rgba(0, 0, 0, 0.1);
   background: var(--white);
 
   display: flex;

@@ -80,7 +80,7 @@
             <li class="about-item">
               <div class="about-icon-box">
                 <svg class="about-icon">
-                  <use href="./images/symbol-defs.svg#antena"></use>
+                  <use href="./images/symbol-defs.svg#Group"></use>
                 </svg>
               </div>
               <h2 class="about-title">ВНИМАНИЕ К ДЕТАЛЯМ</h2>
@@ -485,58 +485,68 @@
           </svg>
         </button>
         <!-- Модальное окно -->
-        <p class="form-title">Оставьте свои данные, мы вам перезвоним</p>
-        <form class="form--contact">
-          <div class="form-field">
-            <label class="form-label" for="name"> Имя </label>
-            <span class="form-wrapper">
-              <input class="form-input" type="text" name="name" id="name" />
-              <svg class="form-icon" width="18" height="18">
+        <p class="modal-title">Оставьте свои данные, мы вам перезвоним</p>
+        <form action="#" class="modal-form">
+          <div class="modal-field">
+            <label class="modal-label" for="user-name"> Имя </label>
+            <span class="modal-wrapper">
+              <input
+                class="modal-input"
+                type="text"
+                name="user-name"
+                id="user-name"
+              />
+              <svg class="modal-icon" width="18" height="18">
                 <use href="./images/symbol-defs.svg#person-black"></use>
               </svg>
             </span>
           </div>
-          <div class="form-field">
-            <label class="form-label" for="tel">Телефон</label>
-            <span class="form-wrapper">
-              <input class="form-input" type="tel" name="tel" id="tel" />
-              <svg class="form-icon" width="18" height="18">
+          <div class="modal-field">
+            <label class="modal-label" for="user-tel">Телефон</label>
+            <span class="modal-wrapper">
+              <input class="modal-input" type="tel" name="tel" id="user-tel" />
+              <svg class="modal-icon" width="18" height="18">
                 <use href="./images/symbol-defs.svg#phone-black"></use>
               </svg>
             </span>
           </div>
-          <div class="form-field">
-            <label class="form-label" for="mail">Почта</label>
-            <span class="form-wrapper">
-              <input class="form-input" type="email" name="mail" id="mail" />
-              <svg class="form-icon" width="18" height="18">
+          <div class="modal-field">
+            <label class="modal-label" for="user-email">Почта</label>
+            <span class="modal-wrapper">
+              <input
+                class="modal-input"
+                type="email"
+                name="user-email"
+                id="user-email"
+              />
+              <svg class="modal-icon" width="18" height="18">
                 <use href="./images/symbol-defs.svg#email-black"></use>
               </svg>
             </span>
           </div>
-          <div class="form-field">
-            <label class="form-label" for="comment">Комментарий</label>
+          <div class="modal-field">
+            <label class="modal-label" for="user-text">Комментарий</label>
             <textarea
-              class="form-text-input"
-              name="comment"
-              id="comment"
+              class="modal-text-input"
+              name="user-text"
+              id="user-text"
               placeholder="Введите текст"
             ></textarea>
           </div>
 
           <input
-            class="form-checkbox visually-hidden"
+            class="modal-checkbox visually-hidden"
             type="checkbox"
-            id="form-checkbox"
+            id="modal-checkbox"
           />
-          <label class="check-label" for="form-checkbox">
+          <label class="check-text" for="modal-checkbox">
             <span>
               <svg class="check-icon" width="11" height="8">
-                <use href="./images/symbol-defs.svg#icon-check"></use>
+                <use href="./images/symbol-defs.svg#Vector"></use>
               </svg>
             </span>
             Соглашаюсь с рассылкой и принимаю
-            <a class="check-licens" href="">Условия договора</a></label
+            <a class="check-licens" href=""> Условия договора </a></label
           >
 
           <button class="form-btn hero-btn" type="submit">Отправить</button>
